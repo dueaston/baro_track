@@ -22,3 +22,4 @@ def fetch_barometric_pressure_data
   doc = Nokogiri::HTML(response.body)
   doc.css('.result-barometric_pressure').map(&:text)
 end
+end 
